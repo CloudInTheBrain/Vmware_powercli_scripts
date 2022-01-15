@@ -8,7 +8,7 @@ Get-VM | Get-CDDrive | Where {$_.extensiondata.connectable.connected -eq $true} 
 
 Get-VM | Get-CDDrive | Where {$_.extensiondata.connectable.connected -eq $true} | Set-CDDrive -NoMedia -confirm:$false
 
-######## En VM Linux, corregir error a la hora de "Eliminar CD"############
+######## En VM Linux, corregir error a la hora de "Eliminar CD"############  https://kb.vmware.com/s/article/87249####
 
 $vms =  Get-VM
  
